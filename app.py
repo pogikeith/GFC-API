@@ -50,6 +50,7 @@ def add_guide():
     email = request.json['email']
     phone = request.json['phone']
     notes = request.json['notes']
+    
 
     new_guide = Guide(firstname, lastname, email, phone, notes)
 
