@@ -5,11 +5,10 @@ from flask_heroku import Heroku
 from flask_marshmallow import Marshmallow
 import os
 
-
+# my capstone backend
 app = Flask(__name__)
 heroku = Heroku(app)
 
-basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://requiwsqjlbpii:7a4a35476bbfcaf7fd12d9d55f623e91daef7d384b341e8dd59c843f999de46f@ec2-107-21-104-31.compute-1.amazonaws.com:5432/d768rm153spgav'
 
 CORS(app)
